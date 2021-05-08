@@ -2,14 +2,22 @@ using UnityEngine;
 using System.Collections.Generic;
 using Interface;
 
+
 namespace MazeConstructor
 {
     public class MazeController : IStartExecute
     {
+        #region Fields
+
         private readonly CellView _cell;
         private readonly int _width;
         private readonly int _height;
         private readonly Transform _placeForLevel;
+
+        #endregion
+
+
+        #region Methods
 
         public MazeController(CellView cell, int width, int height, Transform placeForLevel)
         {
@@ -136,5 +144,7 @@ namespace MazeConstructor
         {
             SpawnMaze(_cell, _width,_height);
         }
+
+        #endregion
     }
 }

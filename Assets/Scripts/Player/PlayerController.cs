@@ -1,29 +1,32 @@
-
-
 using InputContoller;
 using Interface;
 using UnityEngine;
+
 
 namespace Player
 {
     public class PlayerController : IStartExecute, IUpdateExecute
     {
+        #region Fields
+
         private PlayerModel _model;
         private Vector3 _startPosition;
         private PlayerView _view;
         private InputController _inputController;
         private float _torqueCoefficient = 10000.0f;
         private float _maxSteer = 20.0f;
-        
+
+        #endregion
+         
+
+        #region Methods
+
         public PlayerController(PlayerModel playerModel, Vector3 startPosition)
         {
             _model = playerModel;
             _startPosition = startPosition;
         }
-        
-        
-        
-        
+                
         public void StartExecute()
         { 
             _inputController = new InputController();
@@ -44,5 +47,7 @@ namespace Player
                 steeringWheel.steerAngle = _maxSteer * _inputController.Horizontal;
             }
         }
+
+        #endregion
     }
 }

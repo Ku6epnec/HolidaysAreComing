@@ -2,6 +2,8 @@ namespace MazeConstructor
 {
     public class CellModel
     {
+        #region Fields
+
         public int X;
         public int Z;
 
@@ -10,5 +12,7 @@ namespace MazeConstructor
         public bool _floor = true;
 
         public bool _visited = false;
+
+        #endregion
     }
 }

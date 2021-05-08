@@ -391,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cell: {fileID: 5431365601818130077, guid: 38831788d0f93624b8cf88d425774633, type: 3}
   mazeWidth: 10
-  mazeHeight: 9
+  mazeHeight: 10
   placeForLevel: {fileID: 612632653}
   startPosition: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!4 &1313202950

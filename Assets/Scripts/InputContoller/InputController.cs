@@ -1,16 +1,24 @@
 using Interface;
 using UnityEngine;
 
+
 namespace InputContoller
 {
     public class InputController : IUpdateExecute
     {
+        #region Fields
+
         private float _vertical;
         private float _horizontal;
 
         public float Vertical => _vertical;
 
         public float Horizontal => _horizontal;
+
+        #endregion
+
+
+        #region Methods
 
         private void GetInput()
         { 
@@ -22,5 +30,7 @@ namespace InputContoller
         { 
             GetInput();
         }
+
+        #endregion
     }
 }
